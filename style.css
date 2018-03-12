@@ -37,7 +37,7 @@ main {
 
 .hero-text {
 	position: relative;
-	top: 40%;
+	top: 35%;
 	left: 5%;
 }
 
@@ -48,6 +48,31 @@ main {
 	font-weight: 300;
 	text-transform: uppercase;
 	letter-spacing: 3px;
+}
+
+.btn {
+	display: inline-block;
+	margin: 10px 10px 10px 0;
+	padding: 10px 30px;
+	border: 2px solid #9b59b6;
+	border-radius: 30px;
+	text-decoration: none;
+	transition: color 0.2s, background-color 0.2s, border 0.2s;
+}
+
+.btn:hover {
+	background-color: #6c3981;
+	border: 2px solid #6c3981;
+	color: #ffffff;
+}
+
+.btn-sign {
+	background-color: #9b59b6;
+	color: #ffffff;
+}
+
+.btn-learn {
+	color: #9b59b6
 }
 
 footer{
