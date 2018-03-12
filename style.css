@@ -1,6 +1,17 @@
+* {
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	margin: 0;
+}
+
+h1 {
+	font-weight: 300;
+	font-size: 180%;
+	margin-bottom: 10px;
+}
+
 body {
 	background-color: skyblue;
-	font-family: 'Times New Roman', Times, serif;
 	margin: 20px;
 	font-size: 1.5em;
 	color: navy;
