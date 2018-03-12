@@ -1,20 +1,28 @@
 * {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	background-color: #fff;
+	color: #444;
 	font-family: 'Roboto', sans-serif;
 	font-size: 20px;
-	margin: 0;
+	font-weight: 400;
+	max-width: 1140px;
+	margin: 0 auto;
 }
 
 h1 {
 	font-weight: 300;
 	font-size: 180%;
-	margin-bottom: 10px;
 }
 
-body {
-	background-color: skyblue;
-	margin: 20px;
-	font-size: 1.5em;
-	color: navy;
+.hero {
+	background-image: url(assets/img/karolina-szczur-504611-unsplash-min.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 50vh;
 }
 
 h2, p {
