@@ -4,34 +4,58 @@
 }
 
 html {
-	background-color: #fff;
-	color: #444;
-	font-family: 'Roboto', sans-serif;
+	background-color: #ffffff;
+	color: #555555;
+
+	font-family: 'Lato', sans-serif;
 	font-size: 20px;
 	font-weight: 400;
-	max-width: 1140px;
+
 	margin: 0 auto;
 }
 
 h1 {
-	font-weight: 300;
-	font-size: 180%;
+	font-size: 240%;
+	font-weight: 400;
+	text-align: center;
+	line-height: 80px;
+	color: #ffffff;
+	background-color: #9b59b6;
+}
+
+main {
+	max-width: 1140px;
+	margin: 0 auto;
 }
 
 .hero {
-	background-image: url(assets/img/karolina-szczur-504611-unsplash-min.jpg);
+	background-image: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(assets/img/karolina-szczur-504611-unsplash-min.jpg);
 	background-size: cover;
 	background-position: center;
 	height: 50vh;
 }
 
-h2, p {
-	text-align: center;
+.hero-text {
+	position: relative;
+	top: 40%;
+	left: 5%;
+}
+
+.hero-text h2 {
+	color: #ffffff;
+	text-align: left;
+	font-size: 200%;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 3px;
 }
 
 footer{
 	position: fixed;
 	bottom: 0;
-	left: 0;
+	text-align: center;
 	width: 100%;
+	line-height: 40px;
+	color: #ffffff;
+	background-color: #9b59b6;
 }
