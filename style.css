@@ -1,18 +1,86 @@
-body {
-	background-color: skyblue;
-	font-family: 'Times New Roman', Times, serif;
-	margin: 20px;
-	font-size: 1.5em;
-	color: navy;
+* {
+	margin: 0;
+	box-sizing: border-box;
 }
 
-h2, h3, p {
+html {
+	background-color: #ffffff;
+	color: #555555;
+
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 240%;
+	font-weight: 400;
 	text-align: center;
+	line-height: 80px;
+	color: #ffffff;
+	background-color: #9b59b6;
+}
+
+main {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+.hero {
+	background-image: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(assets/img/karolina-szczur-504611-unsplash-min.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 50vh;
+}
+
+.hero-text {
+	position: relative;
+	top: 35%;
+	left: 5%;
+}
+
+.hero-text h2 {
+	color: #ffffff;
+	text-align: left;
+	font-size: 200%;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+.btn {
+	display: inline-block;
+	margin: 10px 10px 10px 0;
+	padding: 10px 30px;
+	border: 2px solid #9b59b6;
+	border-radius: 30px;
+	text-decoration: none;
+	transition: color 0.2s, background-color 0.2s, border 0.2s;
+}
+
+.btn:hover {
+	background-color: #6c3981;
+	border: 2px solid #6c3981;
+	color: #ffffff;
+}
+
+.btn-sign {
+	background-color: #9b59b6;
+	color: #ffffff;
+}
+
+.btn-learn {
+	color: #9b59b6
 }
 
 footer{
 	position: fixed;
 	bottom: 0;
-	left: 0;
+	text-align: center;
 	width: 100%;
+	line-height: 40px;
+	color: #ffffff;
+	background-color: #9b59b6;
 }
