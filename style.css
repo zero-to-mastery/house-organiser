@@ -41,6 +41,14 @@ main {
 	left: 5%;
 }
 
+.leftSecText{
+    color: white;
+    width: 500px;
+    margin: 0px auto;
+    padding-top: 180px;
+    
+}
+
 .hero-text h2 {
 	color: #ffffff;
 	text-align: left;
