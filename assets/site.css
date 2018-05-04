@@ -1,0 +1,15 @@
+
+
+
+.register-items-yours,
+.register-items-essentials,
+.register-items-nonessentials {
+	width: 750px;
+    height: 270px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+}
+
+.footer-credit {
+	font-size: .7em;
+}
