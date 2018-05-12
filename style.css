@@ -22,6 +22,37 @@ h1 {
 	color: #ffffff;
 	background-color: #9b59b6;
 }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: #9b59b6;
+}
+
 
 main {
 	max-width: 1140px;
@@ -82,6 +113,41 @@ main {
 .btn-learn {
 	color: #9b59b6
 }
+.center{
+    border: 2px solid black;
+    padding: 25px;
+    text-align: center;
+}
+.img1{
+	background-image:linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.3)),
+	 url(assets/img/apartment.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	height: 80vh;
+	color: #ffffff;
+}
+.img1 h2{
+	margin-top: 5%;
+	align-self: center;
+	text-align: center;
+	padding: 70px;
+	padding-bottom: 0px;	
+}
+.img1 p{
+	align-self: center;
+	text-align: center;
+	padding: 70px;	
+}
+#c{
+	color: #ffffff;
+	margin-left: 42%;
+	border: 2px solid #ffffff;
+}
+
+
+
+
 
 footer{
 	position: fixed;
