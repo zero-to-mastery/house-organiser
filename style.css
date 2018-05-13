@@ -22,36 +22,6 @@ h1 {
 	color: #ffffff;
 	background-color: #9b59b6;
 }
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover {
-    background-color: #111;
-}
-
-.active {
-    background-color: #9b59b6;
-}
 
 
 main {
@@ -139,13 +109,24 @@ main {
 	text-align: center;
 	padding: 70px;	
 }
+@media only screen and (max-width: 600px) {
+    .img1 p {
+        display: none;
+    }
+    #c{
+    	display: none;
+    }
+}
 #c{
 	color: #ffffff;
 	margin-left: 42%;
 	border: 2px solid #ffffff;
 }
 
-
+.data{
+	padding: 20px;
+	text-align: center;
+}
 
 
 
