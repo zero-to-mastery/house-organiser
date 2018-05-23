@@ -29,6 +29,10 @@ main {
 	margin: 0 auto;
 }
 
+.navbar{
+	z-index: 1;
+}
+
 .hero {
 	background-image: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(assets/img/karolina-szczur-504611-unsplash-min.jpg);
 	background-size: cover;
