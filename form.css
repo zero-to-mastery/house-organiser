@@ -34,3 +34,156 @@ table select{
 	margin-top: 3%;
 	padding-left: 25px;
 }
+
+/*new registration*/
+.form__group{
+padding: 1.2rem;
+	/*background: #00aff0 ;*/
+}
+
+input,select{
+	font-size: 1rem;
+	min-width: 15rem;
+	padding: 0.5rem;
+	text-transform: capitalize;
+	background: #777;
+	border: 1px solid black;
+
+}
+
+input:focus{
+	outline: #00aff0 2px solid;
+}
+
+input::placeholder{
+	/*content:attr(name);*/
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+}
+
+label{
+	font-size: 1rem;
+	color: whitesmoke;
+	padding-left: 10%;
+	text-transform: capitalize;
+}
+
+option{
+	width: 100%;
+	height: 100%;
+	background: #777777;
+}
+
+textarea{
+	width: 100%;
+	height: 100%;
+	background: #777777;
+	color: white;
+	padding: 1rem;
+	font-size: 1rem;
+}
+
+
+.container {
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 22px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+/*custom radio buttons*/
+/* Hide the browser's default radio button */
+.container input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 25px;
+	width: 25px;
+	background-color: #eee;
+	border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+	background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+	background-color: #777777;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+	display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+.btn-gray{
+	background: #777777;
+	padding: 0.8rem;
+	display: inline-block;
+	border-radius: 0.6rem;
+	font-size: 1rem;
+	color: black;
+	transition: all .5s;
+	box-shadow: 2px 4px 4px #888;
+}
+
+.btn-gray:hover ,
+.btn-gray:focus{
+	background: #333333;
+	color: white;
+	box-shadow: 4px 8px 8px #888;
+}
+
+.btn-gray:active{
+	color: #00aff0;
+}
+
+
+
+.form__group button{
+	border: none;
+}.form__group button:focus{
+	outline: none;
+}
+
+
+ .form{
+	 background-image: LINEAR-GRADIENT(TO RIGHT, RGBA(14,14, 9,0.9), RGBA(101, 101, 101,0.9)), url("assets/img/apartment.jpg");
+	 background-image: -MOZ-LINEAR-GRADIENT(TO RIGHT, RGBA(14,14, 96,0.9), RGBA(101, 101, 101,0.9)), url("assets/img/apartment.jpg");
+	 background-image:-WEBKIT-LINEAR-GRADIENT(TO RIGHT, RGBA(14,14, 96,0.9), RGBA(101, 101, 101,0.9)), url("assets/img/apartment.jpg");
+	 height: 100%;
+	 background-size: cover;
+	 width: 100%;
+ }
