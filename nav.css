@@ -1,4 +1,8 @@
-ul {
+.navbar{
+    z-index: 1;
+}
+
+.navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -9,11 +13,11 @@ ul {
     top: 0;
 }
 
-li {
+.navbar li {
     float: left;
 }
 
-li a {
+.navbar li a {
     display: block;
     color: white;
     text-align: center;
@@ -21,7 +25,7 @@ li a {
     text-decoration: none;
 }
 
-li a:hover {
+.navbar li a:hover {
     background-color: #111;
 }
 
