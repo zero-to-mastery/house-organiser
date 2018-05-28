@@ -1,8 +1,10 @@
-.navbar{
+#navbar{
     z-index: 1;
+    overflow: hidden;
+  background-color: #333;
 }
 
-.navbar ul {
+#navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -13,22 +15,41 @@
     top: 0;
 }
 
-.navbar li {
+#navbar li {
     float: left;
 }
 
-.navbar li a {
+#navbar li a {
+	float: left;
+
     display: block;
     color: white;
+    
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
-.navbar li a:hover {
-    background-color: #111;
+#navbar li a:hover {
+    background-color: #222;
 }
 
 .active {
     background-color: #9b59b6;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
 }
