@@ -6,11 +6,9 @@
 html {
 	background-color: #ffffff;
 	color: #555555;
-
 	font-family: 'Lato', sans-serif;
 	font-size: 20px;
 	font-weight: 400;
-
 	margin: 0 auto;
 }
 
@@ -30,7 +28,6 @@ header h1 {
 	margin-bottom: 0px;
 }
 
-
 main {
 }
 
@@ -48,15 +45,15 @@ main {
 }
 
 .leftSecText{
-    color: white;
-    width: 500px;
-    margin: 0px auto;
-    padding-top: 180px;
+  color: white;
+  width: 500px;
+  margin: 0px auto;
+  padding-top: 180px;
     
 }
 
 .rightSec {
-	margin-top: 10px;
+	/*margin-top: 10px;*/
 }
 
 .hero-text h2 {
@@ -93,20 +90,20 @@ main {
 	color: #9b59b6
 }
 .center{
-    border: 2px solid black;
-    padding: 25px;
-    text-align: center;
+  border: 2px solid black;
+  padding: 25px;
+  text-align: center;
 }
 
 .img1 {
-    background-image: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.3)), url(assets/img/apartment.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    height: 80vh;
-    color: #ffffff;
-    align-items: center;
-    align-content: center;
+  background-image: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.3)), url(assets/img/apartment.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 80vh;
+  color: #ffffff;
+  align-items: center;
+  align-content: center;
 }
 
 .img1 h2 {
@@ -120,12 +117,12 @@ main {
 }
 
 @media only screen and (max-width: 600px) {
-    .img1 p {
-        display: none;
-    }
-    #c{
-    	display: none;
-    }
+  .img1 p {
+      display: none;
+  }
+  #c{
+  	display: none;
+  }
 }
 #c{
 	color: #ffffff;
@@ -138,7 +135,24 @@ main {
 	text-align: center;
 }
 
+.about-content h2 {
+	width: 100%;
+	height: 150px;
+	background-color: #9b59b6;
+	color: #ffffff;
+	text-align: center;
+	padding: 5%;
+	text-transform: uppercase;
+}
 
+.about-list {
+	min-height: 300px;
+	padding: 3%;
+}
+
+.about-list li{
+	padding: 1% 0%;
+}
 
 footer{
 	position: fixed;
