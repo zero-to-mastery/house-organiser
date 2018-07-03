@@ -12,43 +12,65 @@
     <link rel="stylesheet" href="nav.css">
 </head>
 <body>
-  <header class="container-fluid">
-        <h1>House Organiser</h1>
+  <header>
+    <div class="container-fluid headerHouseOrg">
+            <h1>House Organiser</h1>
+    </div>
   </header>
-  <div id="navbar" class="container-fluid">
-    <ul>
-      <li><a class="active" href="index.html">Home</a></li>
-      <li><a href="details.html">About Us</a></li>
-      <li><a href="register.html">Contact</a></li>
-    </ul>
-  </div>
-  <main class="container-fluid">
-    <section class="hero row">
-        <div class="hero-text">
-            <h2>Your Things. Organized.</h2>
-            <a class="btn btn-sign" href="register.html">Get Started</a>
-            <a class="btn btn-learn" href="details.html">Learn More</a>
+
+  <div class="easeBody">
+    <div id="navbar" class="container-fluid introTabs">
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="details.html">About Us</a></li>
+        <li><a href="register.html">Contact</a></li>
+      </ul>
+    </div>
+    <main class="container-fluid">
+      <section class="hero row">
+          <div class="hero-text">
+              <h2 class="introText">
+                <div class="introTextSize text1">Your </div>
+                <div class="introTextSize addSpace text2"> Things.</div>
+                <div class="introTextSize text3">Organized</div>
+              </h2>
+              <a class="btn btn-sign getStarted" href="register.html">Get Started</a>
+              <a class="btn btn-learn learnMore" href="details.html">Learn More</a>
+          </div>
+      </section>
+      <div class="jumbotron jumbotron-fluid my-3 mx-1 rounded">
+        <div class="container-fluid">
+          <h1 class="display-4">Own less. Live more.</h1>
         </div>
-    </section>
-    <div class="jumbotron jumbotron-fluid my-3 mx-1 rounded">
-      <div class="container-fluid">
-        <h1 class="display-4">Own less. Live more.</h1>
       </div>
-    </div>
-    <div class="img1 row">
-      <h2>"Reclaim your home and take back what matters most: Your Time"</h2>
-      <p>We offer downsizing assistance for seniors and their families during major life changes <br>
-      When adult children can’t tackle the project alone; we will be there to help <br>
-      We are the extra family member you need, and your guide through the practical steps of life transitions</p>
-      <a class="btn btn-learn" id="c" href="details.html">Learn More</a>
-    </div>
-  </main>
+      <div class="img1 row">
+        <h2>"Reclaim your home and take back what matters most: Your Time"</h2>
+        <p>We offer downsizing assistance for seniors and their families during major life changes <br>
+        When adult children can’t tackle the project alone; we will be there to help <br>
+        We are the extra family member you need, and your guide through the practical steps of life transitions</p>
+        <a class="btn btn-learn" id="c" href="details.html">Learn More</a>
+      </div>
+    </main>
 
 
 
+    
+    <footer class="container-fluid">
+          <small>&copy; Copyright 2018, Keep It Simple, Inc.</small>
+    </footer>
   
-  <footer class="container-fluid">
-        <small>&copy; Copyright 2018, Keep It Simple, Inc.</small>
-  </footer>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.0/TweenMax.min.js"></script>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/CustomWiggle.min.js?v=5">  </script>
+  <script>
+    TweenMax.from('.headerHouseOrg', 2.5 , {y:-50, opacity:0.5, ease:Power1.easeOut} )
+    TweenMax.to('.easeBody', 2.5, {y:50, ease:Power1.easeOut})
+
+    TweenMax.from('.text1', 3.5, {x:-150, opacity:1, ease: SteppedEase.config(12)})
+    TweenMax.from('.text2', 3.5, {y:-150, opacity:1, ease: SteppedEase.config(12)})
+    TweenMax.from('.text3', 3.5, {y:150, opacity:1, ease: SteppedEase.config(12)})
+
+  </script>
 </body>
 </html>

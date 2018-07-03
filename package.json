@@ -1,0 +1,19 @@
+{
+  "name": "house-organiser",
+  "version": "1.0.0",
+  "description": "\"Registers the amount and type of \r items that you have and helps you \r reach your goal of reaching a \r certain number of items of your \r choice.\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zero-to-mastery/house-organiser.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zero-to-mastery/house-organiser/issues"
+  },
+  "homepage": "https://github.com/zero-to-mastery/house-organiser#readme"
+}
