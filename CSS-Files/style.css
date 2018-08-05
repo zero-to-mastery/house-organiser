@@ -28,35 +28,13 @@
     }
 }
 
-.hero {
-	margin: 0;
-	width: 100vw;
-	height: 100vh;
-	overflow: hidden;
-	position: relative;
-}
-
 .custHero{
 	background-image: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../assets/img/karolina-szczur-504611-unsplash-min.jpg);
 	background-size: cover;
 	background-position: center;
 	margin: 0;
 	width: 100vw;
-	height: 70vh;
-}
-
-.hero-img{
-	position: absolute;
-	width: 100vw;
 	height: 100vh;
-	background-image: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../assets/img/karolina-szczur-504611-unsplash-min.jpg);
-	background-size: cover;
-	background-position: center;
-	transition: transform 500ms ease;
-}
-
-.hero-img:hover{
-	transform: scale(1.2);
 }
 
 .hero-text {
@@ -177,13 +155,11 @@
 }
 
 footer{
-	position: fixed;
-	bottom: 0;
 	text-align: center;
 	width: 100%;
-	line-height: 40px;
+	line-height: 80px;
 	color: #ffffff;
-	background-color: #9b59b6;
+	background-image: linear-gradient(to right, #9b59b6, #8c61c5, #7769d3, #5772e0, #127aeb);
 }
 
 .headerHouseOrg h1 span {
@@ -191,11 +167,10 @@ footer{
 }
 
 .ownLessBack{
-	/* background-image: radial-gradient(circle, #444444, #343434, #242424, #161616, #000000); */
 	background-image: linear-gradient(to right, #9b59b6, #8c61c5, #7769d3, #5772e0, #127aeb);
 	color: white;
 	text-align: center;
-	padding: 5%;
+	padding: 80px;
 }
 
 .ownLessBack h1{
