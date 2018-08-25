@@ -1,0 +1,197 @@
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.row:not(:last-child) {
+    margin-bottom: 80px;
+}
+
+.section-stories {
+    position: relative;
+    padding: 150px 0;
+
+    /*@include respond(tab-port) {
+        padding: 10rem 0;
+    }*/
+}
+
+.story {
+    width: 75%;
+    margin: 0 auto;
+    box-shadow: 0 30px 60px rgba (#ff0000, .8);
+    background-color: rgba (#ff00ff, .6);
+    border-radius: 3px;
+    padding: 60px;
+    padding-left: 90px;
+    font-size: 16px;
+    transform: skewX(-12deg);
+    z-index: 100;
+    /*transforms all the child elements of the story element
+    & > * {
+        transform: skewX(12deg);
+    }*/
+
+/*    @include respond(tab-port) {
+        width: 100%;
+        padding: 4rem;
+        padding-left: 7rem;
+    }
+
+    @include respond(phone) {
+        transform: translateX(-3rem) skewX(0);
+    }*/
+}
+
+.story__shape {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    float: left;
+    overflow: hidden;
+    border-radius: 50%;
+    transform: translateX(-30px) skewX(12deg);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    border-radius: none;
+    /*@supports (-webkit-clip-path: polygon(0 0)) or (clip-path: polygon(0 0)) {
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        -webkit-shape-outside: circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%);
+        border-radius: none;
+    }*/
+
+    
+    /*@include respond(phone) {
+        transform: skewX(0);
+    }*/
+}
+
+.story__img {
+    height: 100%;
+    transform: translateX(-35px) scale(1.4);
+    backface-visibility: hidden;
+    transition: all .5s;
+}
+
+.story__text {
+    transform: skewX(12deg);
+    /*@include respond(phone) {
+        transform: skewX(0);
+    }*/
+}
+
+.story__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 17px;
+    text-align: center;
+    opacity: 0;
+    transition: all .5s;
+    backface-visibility: hidden;
+}
+
+.story:hover .story__caption {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+}
+
+.story:hover .story__img {
+    transform: translateX(-35px) scale(1);
+    filter: blur(3px) brightness(80%);
+}
+
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .15;
+    overflow: hidden;
+}
+.bg-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.heading-secondary {
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-image: linear-gradient(to right, #9b59b6, #9b59b6);
+    display: inline-block;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: 2px;
+    transition: all .2s;
+
+    /*@include respond(tab-port) {
+        font-size: 3rem;
+    }
+
+    @include respond(phone) {
+        font-size: 2.5rem;
+    }*/
+}
+
+.heading-secondary:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: 5px 10px 20px rgba(#000, .2);
+}
+
+.heading-tertiary {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.u-center-text { text-align: center !important; }
+.u-margin-bottom-small { margin-bottom: 15px !important; }
+.u-margin-bottom-medium {
+    margin-bottom: 40px !important;
+}
+.u-margin-bottom-big {
+    margin-bottom: 80px !important;
+}
+.u-margin-top-big { margin-top: 80px !important; }
+.u-margin-top-huge { margin-top: 10px !important; }
+
+.btn-text:link,
+.btn-text:visited {
+        font-size: 16px;
+        color: #9b59b6;
+        display: inline-block;
+        text-decoration: none;
+        border-bottom: 1px solid #9b59b6;
+        padding: 3px;
+        transition: all .2s;
+}
+
+.btn-text:hover {
+    color: #fff;
+    background-color: #9b59b6;
+    box-shadow: 0 10px 20px rgba(#000, .15);
+    transform: translateY(-2px);
+}
+
+.btn-text:active {
+    box-shadow: 0 5px 10px rgba(#000, .15);
+    transform: translateY(0);
+}
