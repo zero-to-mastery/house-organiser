@@ -185,6 +185,10 @@ textarea{
 	width:50%;
 }
 
+.form__group h3 {
+	font-size: 1.5rem;
+}
+
 .form__group button{
 	border: none;
 	color: #fff;
