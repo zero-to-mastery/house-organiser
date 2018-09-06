@@ -35,12 +35,14 @@
 	margin: 0;
 	width: 100vw;
 	height: 100vh;
+	max-width: 100%;
 }
 
 .hero-text {
 	position: relative;
 	top: 35%;
 	left: 5%;
+	height: 45%;
 }
 
 .leftSecText{
