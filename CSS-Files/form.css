@@ -37,8 +37,7 @@ table select{
 
 input,select{
 	font-size: 1rem;
-	/* min-width: 15rem; */
-	padding: 0.5rem;
+	padding: 0.25rem;
 	text-transform: capitalize;
 	background: #777;
 	border: 1px solid black;
@@ -160,7 +159,8 @@ textarea{
 }
 
 .form__container {
-	height: 50%;
+	height: 55%;
+	overflow: auto;
 }
 
 .form{
