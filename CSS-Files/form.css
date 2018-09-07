@@ -164,6 +164,8 @@ textarea{
 }
 
 .form__container {
+	position: relative;
+	top: 35%;
 	height: 55%;
 	overflow: auto;
 	padding: 0 5px 5px 10px;
