@@ -136,7 +136,7 @@ textarea{
 	background: white;
 }
 
-.btn-gray{
+.form__submit{
 	background: #777777;
 	padding: 0.8rem;
 	display: inline-block;
@@ -147,14 +147,14 @@ textarea{
 	box-shadow: 2px 4px 4px #888;
 }
 
-.btn-gray:hover ,
-.btn-gray:focus{
+.form__submit:hover ,
+.form__submit:focus{
 	background: #333333;
 	color: white;
 	box-shadow: 4px 8px 8px #888;
 }
 
-.btn-gray:active{
+.form__submit:active{
 	color: #00aff0;
 }
 
