@@ -145,6 +145,7 @@ textarea{
 	color: black;
 	transition: all .5s;
 	box-shadow: 2px 4px 4px #888;
+	cursor: pointer;
 }
 
 .form__submit:hover ,
