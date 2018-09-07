@@ -171,6 +171,7 @@ textarea{
 .form__container {
 	height: 55%;
 	overflow: auto;
+	padding: 0 5px 5px 10px;
 }
 
 .form{
