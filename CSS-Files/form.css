@@ -146,6 +146,11 @@ textarea{
 	transition: all .5s;
 	box-shadow: 2px 4px 4px #888;
 	cursor: pointer;
+	width: 175px;
+	height: 50px;
+	position: relative;
+	top: 100px;
+	left: 35px;
 }
 
 .form__submit:hover ,
