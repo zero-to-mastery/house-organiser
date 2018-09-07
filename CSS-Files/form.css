@@ -46,7 +46,7 @@ input,select{
 }
 
 input:focus{
-	outline: #00aff0 2px solid;
+	outline: #9b59b6 2px solid;
 }
 
 input::placeholder{
@@ -78,7 +78,6 @@ textarea{
 	padding: 1rem;
 	font-size: 1rem;
 }
-
 
 .container {
 	display: block;
@@ -143,7 +142,7 @@ textarea{
 	cursor: pointer;
 	position: relative;
 	top: 100px;
-	left: 35px;
+	left: 20px;
 	width: 200px;
 	height: 75px;
 	border: 1px solid grey;
@@ -154,7 +153,7 @@ textarea{
 	font-size: 1rem;
 	color: whitesmoke;
 	color: rgba(230, 230, 230, 1);
-	transition: all .5s;
+	transition: all .3s;
 }
 
 .form__submit:hover{
@@ -162,10 +161,6 @@ textarea{
 	background: rgba(15, 15, 15, 0.95);
 	font-size: 1.25rem;
 	color: white;
-}
-
-.form__submit:active{
-	color: #00aff0;
 }
 
 .form__container {
