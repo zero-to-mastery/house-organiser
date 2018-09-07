@@ -35,24 +35,18 @@ table select{
 	padding-left: 25px;
 }
 
-/*new registration*/
-.form__group{
-padding: 1.2rem;
-	/*background: #00aff0 ;*/
-}
-
 input,select{
 	font-size: 1rem;
-	min-width: 15rem;
-	padding: 0.5rem;
+	padding: 0.25rem;
 	text-transform: capitalize;
 	background: #777;
-	border: 1px solid black;
+	background: rgba(15, 15, 15, 0.65);
+	border: 1px solid grey;
 	color: #fff
 }
 
 input:focus{
-	outline: #00aff0 2px solid;
+	outline: #9b59b6 2px solid;
 }
 
 input::placeholder{
@@ -65,7 +59,6 @@ input::placeholder{
 label{
 	font-size: 1rem;
 	color: whitesmoke;
-	padding-left: 10%;
 	text-transform: capitalize;
 }
 
@@ -79,11 +72,12 @@ textarea{
 	width: 100%;
 	height: 100%;
 	background: #777777;
+	background: rgba(15, 15, 15, 0.65);
+	border: 1px solid grey;
 	color: white;
 	padding: 1rem;
 	font-size: 1rem;
 }
-
 
 .container {
 	display: block;
@@ -91,11 +85,7 @@ textarea{
 	padding-left: 35px;
 	margin-bottom: 12px;
 	cursor: pointer;
-	font-size: 22px;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
+	font-size: 16px;
 }
 /*custom radio buttons*/
 /* Hide the browser's default radio button */
@@ -148,29 +138,64 @@ textarea{
 	background: white;
 }
 
-.btn-gray{
-	background: #777777;
-	padding: 0.8rem;
-	display: inline-block;
+.form__submit{
+	cursor: pointer;
+	position: relative;
+	top: 100px;
+	left: 20px;
+	width: 200px;
+	height: 75px;
+	border: 1px solid grey;
+	background: #333;
+	background: rgba(15, 15, 15, 0.6);
+	padding: 0.75rem;
 	border-radius: 0.6rem;
 	font-size: 1rem;
-	color: black;
-	transition: all .5s;
-	box-shadow: 2px 4px 4px #888;
+	color: whitesmoke;
+	color: rgba(230, 230, 230, 1);
+	transition: all .3s;
 }
 
-.btn-gray:hover ,
-.btn-gray:focus{
-	background: #333333;
+.form__submit:hover{
+	background: #111;
+	background: rgba(15, 15, 15, 0.95);
+	font-size: 1.25rem;
 	color: white;
-	box-shadow: 4px 8px 8px #888;
 }
 
-.btn-gray:active{
-	color: #00aff0;
+.form__container {
+	position: relative;
+	top: 35%;
+	height: 55%;
+	overflow: auto;
+	padding: 0 5px 5px 10px;
 }
 
+.form{
+	display: flex;
+	flex-flow: wrap;
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+ }
 
+.form__group{
+	padding: .5rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.form__group--1-4{
+	width: 25%;
+}
+
+.form__group--1-2{
+	width:50%;
+}
+
+.form__group h3 {
+	font-size: 1.5rem;
+}
 
 .form__group button{
 	border: none;
@@ -178,13 +203,3 @@ textarea{
 }.form__group button:focus{
 	outline: none;
 }
-
-
- .form{
-	 background-image: LINEAR-GRADIENT(TO RIGHT, RGBA(14,14, 9,0.9), RGBA(101, 101, 101,0.9)), url("assets/img/apartment.jpg");
-	 background-image: -MOZ-LINEAR-GRADIENT(TO RIGHT, RGBA(14,14, 96,0.9), RGBA(101, 101, 101,0.9)), url("assets/img/apartment.jpg");
-	 background-image:-WEBKIT-LINEAR-GRADIENT(TO RIGHT, RGBA(14,14, 96,0.9), RGBA(101, 101, 101,0.9)), url("assets/img/apartment.jpg");
-	 height: 100%;
-	 background-size: cover;
-	 width: 100%;
- }
