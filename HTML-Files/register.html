@@ -65,48 +65,33 @@
             </div>
             <div class="form__container">
                 <form class="form">
-                    <div class="form__group form__group--1-4">
-                        <label for="first-name">First Name</label>
-                        <input type="text" name="first-name" placeholder="First name">
-                    </div>
-                    <div class="form__group form__group--1-4">
-                        <label for="last-name">Last Name</label>
-                        <input type="text" name="last-name" placeholder="Last name">
-                    </div>
-                    <div class="form__group form__group--1-2">
-                        <label for="email">E-mail</label>
-                        <input type="email" name="email" placeholder="Email">
-                    </div>
-                    <div class="form__group">
+                    <div class="form__radio_group">
                         <h3>How did you hear about us?</h3>
-
-                        <label class="container">TV
-                            <input type="radio" checked="checked" name="radio">
-                            <span class="checkmark"></span>
+                        <label class="radio_container"><input type="radio" checked="checked" name="radio">TV
                         </label>
-                        <label class="container">Web Search
-                            <input type="radio" name="radio">
-                            <span class="checkmark"></span>
+                        <label class="radio_container"><input type="radio" name="radio">Web Search
                         </label>
-                        <label class="container">Social Media
-                            <input type="radio" name="radio">
-                            <span class="checkmark"></span>
+                        <label class="radio_container"><input type="radio" name="radio">Social Media
                         </label>
-                        <label class="container">Refer by friends
-                            <input type="radio" name="radio">
-                            <span class="checkmark"></span>
+                        <label class="radio_container"><input type="radio" name="radio">Refer by friends
                         </label>
-                        <label class="container">other
-                            <input type="radio" name="radio">
-                            <span class="checkmark"></span>
+                        <label class="radio_container"><input type="radio" name="radio">Other
                         </label>
                     </div>
                     <div class="form__group">
-                        <h3>Your Message:</h3>
-                        <textarea rows="" cols="40"></textarea>
+                        <div class="form__message">
+                            <label for="message">Your Message:</label>
+                            <textarea id="message"></textarea>
+                        </div>
+                        <div class="form__contact">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" placeholder="First name Last name">
+                            
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" placeholder="Email address">
+                            <button type="submit" class="form__submit">Submit</button>
+                        </div>
                     </div>
-                    <button type="submit" class="form__submit">Submit</button>
-
                 </form>
             </div>
         </section>
