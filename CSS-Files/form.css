@@ -1,47 +1,14 @@
-
-
-form {
-   width: 750px;
-   height: 550px;
-	 margin: auto;
-	 color: #fff;
- }
-table input{
-	width: 250px;
-	height: 30px;
-	margin-left: 10px;
-	margin-bottom: 5px;
-}
-table select{
-	width: 250px;
-	height: 30px;
-	margin-left: 10px;
-	margin-bottom: 5px;
-}
-.radio input{
-	width: 15px;
-	height: 15px;
-	margin-right: 0px;
-}
-.submit input{
-	margin-top: 30px;
-	font-size: 15px;
-	letter-spacing: 2px;
-	padding: 5px 10px 5px 10px;
-}
-
-.right{
-	margin-top: 3%;
-	padding-left: 25px;
+input[type="radio"]{
+	margin-right: 10px;
 }
 
 input,select{
 	font-size: 1rem;
-	padding: 0.25rem;
 	text-transform: capitalize;
 	background: #777;
 	background: rgba(15, 15, 15, 0.65);
 	border: 1px solid grey;
+	border-radius: 5px;
 	color: #fff
 }
 
@@ -50,101 +17,113 @@ input:focus{
 }
 
 input::placeholder{
-	/*content:attr(name);*/
-	text-transform: uppercase;
-	text-align: center;
-	color: white;
+	/* content:attr(name); */
+	color: #777777;
+	font-size: 0.9rem;
 }
 
-label{
-	font-size: 1rem;
+.form__container {
+	overflow: auto;
+	padding: 0 5px 5px 50px;
+}
+
+.form{
+	display: flex;
+	flex-direction: column;
+	padding: 1.8em;
+	background-size: cover;
+ }
+
+.form__radio_group{
+}
+
+.form__radio_group > h3{
+	padding-left: 35px;
 	color: whitesmoke;
-	text-transform: capitalize;
 }
 
-option{
-	width: 100%;
-	height: 100%;
-	background: #777777;
-}
-
-textarea{
-	width: 100%;
-	height: 100%;
-	background: #777777;
-	background: rgba(15, 15, 15, 0.65);
-	border: 1px solid grey;
-	color: white;
-	padding: 1rem;
-	font-size: 1rem;
-}
-
-.container {
+.form__radio_group > label {
 	display: block;
-	position: relative;
+	cursor: pointer;
+}
+
+.radio_container {
+	display: flex;
+	flex-direction: column;
 	padding-left: 35px;
 	margin-bottom: 12px;
 	cursor: pointer;
 	font-size: 16px;
 }
-/*custom radio buttons*/
-/* Hide the browser's default radio button */
-.container input {
-	position: absolute;
-	opacity: 0;
-	cursor: pointer;
-}
-
-/* Create a custom radio button */
-.checkmark {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 25px;
-	width: 25px;
-	background-color: #eee;
-	border-radius: 50%;
-}
 
 /* On mouse-over, add a grey background color */
-.container:hover input ~ .checkmark {
+.radio_container:hover input ~ .checkmark {
 	background-color: #ccc;
 }
 
 /* When the radio button is checked, add a blue background */
-.container input:checked ~ .checkmark {
+.radio_container input:checked ~ .checkmark {
 	background-color: #777777;
 }
 
-/* Create the indicator (the dot/circle - hidden when not checked) */
-.checkmark:after {
-	content: "";
-	position: absolute;
-	display: none;
+.form__group{
+	display: flex;
+	padding: 1.8em;
 }
 
-/* Show the indicator (dot/circle) when checked */
-.container input:checked ~ .checkmark:after {
-	display: block;
+.form__group button{
+	border: none;
+	color: #fff;
+}
+.form__group button:focus{
+	outline: none;
 }
 
-/* Style the indicator (dot/circle) */
-.container .checkmark:after {
-	top: 9px;
-	left: 9px;
-	width: 8px;
-	height: 8px;
-	border-radius: 50%;
-	background: white;
+.form__group label, 
+.form__radio_group label{
+	font-size: 1rem;
+	color: whitesmoke;
+	text-transform: capitalize;
+}
+.form__message{
+	display: flex;
+	flex-direction: column;
+	order: 2;
+	margin: 0 15% 0 5%;
+}
+.form__message > textarea {
+	flex: 1; 
+	min-width: 35vw;
+	background: #777777;
+	background: rgba(15, 15, 15, 0.65);
+	border: 1px solid grey;
+	border-radius: 5px;
+	color: #fff;
+	padding: 1rem;
+	font-size: 1rem;
+   }
+.form__contact{
+	order: 1;
+	margin: 0 5% 0 0;
+}
+
+.form__contact input {
+	width: 100%;
+	height: 40px;
+}
+
+.form__contact input,
+.form__contact button {
+    padding: 1em;
+    margin-bottom: 1em;
 }
 
 .form__submit{
 	cursor: pointer;
-	position: relative;
 	top: 100px;
 	left: 20px;
-	width: 200px;
-	height: 75px;
+	width: 150px;
+	height: 60px;
 	border: 1px solid grey;
 	background: #333;
 	background: rgba(15, 15, 15, 0.6);
@@ -152,54 +131,50 @@ textarea{
 	border-radius: 0.6rem;
 	font-size: 1rem;
 	color: whitesmoke;
-	color: rgba(230, 230, 230, 1);
+	color: rgba(230, 230, 230, 1); 
 	transition: all .3s;
 }
 
 .form__submit:hover{
 	background: #111;
 	background: rgba(15, 15, 15, 0.95);
-	font-size: 1.25rem;
 	color: white;
 }
 
-.form__container {
-	position: relative;
-	top: 35%;
-	height: 55%;
-	overflow: auto;
-	padding: 0 5px 5px 10px;
-}
+@media (min-width: 320px) and (max-width: 600px) {
 
-.form{
-	display: flex;
-	flex-flow: wrap;
-	height: 100%;
-	width: 100%;
-	background-size: cover;
- }
+	.form__container {
+		padding: 0 5px;
+	}
+	.form__radio_group{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
 
-.form__group{
-	padding: .5rem;
-	display: flex;
-	flex-direction: column;
-}
+  .form__group{
+	  flex-direction: column;
+  }
+  .form__message{
+	  order:1;
+	  margin: 0 5% 0 0;
+	  width: 95%;
+  }
+  .form__message textarea{
+    padding: 1em;
+    margin-bottom: 1em;
+	}
 
-.form__group--1-4{
-	width: 25%;
-}
+  .form__contact{
+	  order: 2;
+  }
 
-.form__group--1-2{
-	width:50%;
-}
-
-.form__group h3 {
-	font-size: 1.5rem;
-}
-
-.form__group button{
-	border: none;
-	color: #fff;
-}.form__group button:focus{
-	outline: none;
-}
+  .form__radio_group > h3{
+	  font-size: 1.5rem;
+	  flex-basis: 100%;
+  }
+  .radio_container {
+	  font-size: 10px;
+  }
+  }
