@@ -1,14 +1,17 @@
-.center{
+.center {
 	border: none;
 }
-.icons{
+
+.icons {
 	display: flex;
 	width: 100%;
 	margin: 0;
 	padding: 0;
 	justify-content: center;
 }
-.hero-text{
+
+.hero-text {
 	display: inline-block;
 	padding-bottom: 30px;
+	align-content: top;
 }

@@ -7,49 +7,48 @@
 
 
 .introText {
-    display:flex;
-    flex-flow:row wrap;
+	display: flex;
+	flex-flow: row wrap;
 }
 
-.introText2{
+.introText2 {
 	margin: auto;
 	display: flex;
 	justify-content: center;
 }
 
-.introText .introTextSize{
-    font-size:2.5rem;
+.introText .introTextSize {
+	font-size: 2.5rem;
 }
 
 @media only screen and (max-width: 305px) {
-    .introText .introTextSize{
-        font-size:1rem;
-        color:black;
-    }
+	.introText .introTextSize {
+		font-size: 1rem;
+		color: black;
+	}
 }
 
-.custHero{
-	background-image: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../assets/img/karolina-szczur-504611-unsplash-min.jpg);
+.custHero {
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/img/karolina-szczur-504611-unsplash-min.jpg);
 	background-size: cover;
 	background-position: center;
 	margin: 0;
 	width: 100vw;
-	height: 100vh;
+	height: 800px;
 	max-width: 100%;
 }
 
 .hero-text {
-	position: relative;
-	top: 35%;
-	left: 5%;
+	margin-top: 50px;
+	margin-left: 1.8em;
 }
 
-.leftSecText{
-  color: white;
-  width: 500px;
-  margin: 0px auto;
-  padding-top: 180px;
-    
+.leftSecText {
+	color: white;
+	width: 500px;
+	margin: 0px auto;
+	padding-top: 180px;
+
 }
 
 .hero-text h2 {
@@ -87,23 +86,24 @@
 .btn-learn {
 	color: #9b59b6
 }
-.center{
-  border: 2px solid black;
-  padding: 25px;
-  text-align: center;
+
+.center {
+	border: 2px solid black;
+	padding: 25px;
+	text-align: center;
 }
 
 .img1 {
-  background-image: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.3)), url(../assets/img/apartment.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  margin: 0;
-  width: 100vw;
-  height: 100vh;
-  color: #ffffff;
-  align-items: center;
-  align-content: center;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url(../assets/img/apartment.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	margin: 0;
+	width: 100vw;
+	height: 100vh;
+	color: #ffffff;
+	align-items: center;
+	align-content: center;
 }
 
 
@@ -118,20 +118,22 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .img1 p {
-      display: none;
-  }
-  #c{
-  	display: none;
-  }
+	.img1 p {
+		display: none;
+	}
+
+	#c {
+		display: none;
+	}
 }
-#c{
+
+#c {
 	color: #ffffff;
 	margin: auto;
 	border: 2px solid #ffffff;
 }
 
-.data{
+.data {
 	padding: 20px;
 	text-align: center;
 }
@@ -151,11 +153,11 @@
 	padding: 3%;
 }
 
-.about-list li{
+.about-list li {
 	padding: 1% 0%;
 }
 
-footer{
+footer {
 	text-align: center;
 	width: 100%;
 	line-height: 80px;
@@ -167,13 +169,13 @@ footer{
 	color: black;
 }
 
-.ownLessBack{
+.ownLessBack {
 	background-image: linear-gradient(to right, #9b59b6, #8c61c5, #7769d3, #5772e0, #127aeb);
 	color: white;
 	text-align: center;
 	padding: 80px;
 }
 
-.ownLessBack h1{
+.ownLessBack h1 {
 	text-shadow: 0px 0px 20px rgba(0, 0, 0, .2);
 }
