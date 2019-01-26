@@ -145,16 +145,18 @@
 	padding: 5%;
 	text-transform: uppercase;
 }
-
+.about-content {
+	text-align:center;
+}
 .about-list {
 	min-height: 300px;
 	padding: 3%;
+	list-style-position:inside;
 }
 
 .about-list li{
 	padding: 1% 0%;
 }
-
 footer{
 	text-align: center;
 	width: 100%;
