@@ -48,13 +48,49 @@
             </div>
         </nav>  
 
-        <main>
+        <main id="main-section">
             <section class="leftSec custHero">
-                <p class="leftSecText">Take the quiz below to find out how badly you need our services.<br></p>
+                <p class="leftSecText display-3 text-center">Take Our Questionnaire Below</p>
+                <p class="text-white text-center lead">Take our quiz and answer the questions as honestly as possible. Your answers will help us understand if you need our help.</p>
             </section>
+            <div class="ownLessBack">
+                    <h1 class="introText2">
+                        <div class="introTextSize text1 rev3 display-3">Our Questionnaire</div>
+                    </h1>
+                </div>
             <section class="rightSec">
-            
+                    <div id="questionnaire">
+                            <form action="" method="post">
+                                <div class="form-group d-flex flex-column">
+                                    <p>Do you have trouble discarding(or recycling, selling or giving away) things that most other people would get rid of?</p>
+                                    <div class="form-group align-self-center">
+                                        <label for="quizQuestionOneYes">Yes</label>
+                                        <input type="radio" name="quizQuestionOne" class="m-2" id="quizQuestionOneyes">
+                                        <label for="quizQuestionOneNo">No</label>
+                                        <input type="radio" name="quizQuestionOne" class="m-2" id="quizQuestionOneNo">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <p>How difficult is it to use the rooms and surfaces in your home because of clutter?</p>
+                                    <input type="text" name="clutteredSurfaces" class="w-100" id="clutteredSurfaces">
+                                </div>
+                                <div class="form-group">
+                                    <p>To what extent do you buy items or acquire free things that you do need or have enough space for</p>
+                                    <input type="text" name="noSpace" class="w-100" id="noSpace">
+                                </div>
+                                <div class="form-group">
+                                    <p>To what extent do does your hoarding, saving, acquisition, and clutter affect your daily functioning?</p>
+                                    <input type="text" name="affectDaily" class="w-100" id="affectDaily">
+                                </div>
+                                <div class="form-group">
+                                    <p>How much do these symptoms interfere with school, work or your social or family life?</p>
+                                    <input type="text" name="interfere" class="w-100" id="interfere">
+                                </div>
+                                <button type="submit" class="w-100 btn btn-sign">Submit</button>
+                            </form>
+                        </div>
             </section>
+
             <!-- <div class="about-content">
                 <h2>Our goals for your home</h2>
                 <ul class="about-list">
