@@ -1,0 +1,27 @@
+{
+  "name": "house-organiser",
+  "version": "1.1.0",
+  "description": "\"Registers the amount and type of  items that you have and helps you  reach your goal of reaching a  certain number of items of your  choice.\"",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rmckays/house-organiser.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rmckays/house-organiser/issues"
+  },
+  "homepage": "https://github.com/Rmckays/house-organiser#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
