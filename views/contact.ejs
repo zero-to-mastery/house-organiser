@@ -1,0 +1,78 @@
+<%- include('./includes/head.ejs') %>
+
+<link rel="stylesheet" href="/css/icon.css">
+<link rel="stylesheet" href="/css/form.css">
+<link rel="stylesheet" href="/css/register.css">
+<link rel="stylesheet" href="/css/radioBtns.css" type="text/css" />
+</head>
+
+<body>
+  <%- include('./includes/navigation.ejs') %>
+
+  <main>
+    <section class="custHero">
+      <div class="hero-text">
+        <h2 class="contact-title">Contact Us:</h2>
+      </div>
+      <div class="form__container">
+        <form class="form">
+          <div class="form__radio_group">
+            <h3>How did you hear about us?</h3>
+            <label class="radio_container">TV<input type="radio" checked="checked" name="radio"><span
+                class="custom_button"></span>
+            </label>
+            <label class="radio_container">Web Search<input type="radio" name="radio"><span
+                class="custom_button"></span>
+            </label>
+            <label class="radio_container">Social Media<input type="radio" name="radio"><span
+                class="custom_button"></span>
+            </label>
+            <label class="radio_container">Refer by friends<input type="radio" name="radio"><span
+                class="custom_button"></span>
+            </label>
+            <label class="radio_container">Other<input type="radio" name="radio"><span class="custom_button"></span>
+            </label>
+          </div>
+          <div class="form__group">
+            <div class="form__message">
+              <label for="message">Your Message:</label>
+              <textarea id="message"></textarea>
+            </div>
+            <div class="form__contact">
+              <label for="name">Name</label>
+              <input type="text" name="name" placeholder="First name Last name">
+
+              <label for="email">E-mail</label>
+              <input type="email" name="email" placeholder="Email address">
+              <button type="submit" class="form__submit">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <div class="center">
+      <h3>Social Media</h3>
+    </div>
+    <div class="icons">
+      <a href="#" class="fa fa-facebook mx-1"></a>
+      <a href="#" class="fa fa-twitter mx-1"></a>
+      <a href="#" class="fa fa-google mx-1"></a>
+      <a href="#" class="fa fa-linkedin mx-1"></a>
+      <a href="#" class="fa fa-youtube mx-1"></a>
+      <a href="#" class="fa fa-instagram mx-1"></a>
+      <a href="#" class="fa fa-pinterest mx-1"></a>
+    </div>
+    <div class="center">
+      <h3>Our Information</h3>
+    </div>
+    <div class="data">
+      <h4>Phone: +1234565</h4>
+      <h4>Email: info@email.com</h4>
+      <h4>Address: Suite 134 Nashville, TN 37205</h4>
+    </div>
+    <div class="center">
+      <h3>Arrangement of your household goods, Our responsibilty</h3>
+    </div>
+
+    <%- include('./includes/footer.ejs') %>
+    <%- include('./includes/end.ejs') %>

@@ -1,0 +1,27 @@
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark myNav" style="background-color: #9b59b6">
+  <a class="navbar-brand display-4" href="/">
+    <img src="/img/home-52.png" width="30" height="30" class="d-inline-block align-top" id="houseImg" alt=""
+      style="margin-right: 10px">
+    <span id="navHouse">House</span> Organizer
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+    aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="<%= path === '/' ? 'active' : '' %> nav-link" href="/">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="<%= path === '/quiz' ? 'active' : '' %> nav-link" href="/quiz">Are you a hoarder?</a>
+      </li>
+      <li class="nav-item">
+        <a class="<%= path === '/about' ? 'active' : '' %> nav-link" href="/about">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="<%= path === '/contact' ? 'active' : '' %> nav-link" href="/contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>

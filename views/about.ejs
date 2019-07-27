@@ -1,0 +1,102 @@
+<%- include('./includes/head.ejs') %>
+
+<link rel="stylesheet" href="/css/stories.css" />
+</head>
+
+<body>
+  <%- include('./includes/navigation.ejs') %>
+  <main>
+    <section class="leftSec custHero">
+      <p class="leftSecText">
+        Our firm has 12 years of experience in household organizing, including
+        accommodating palliative care, preparing for home hospice, or simply
+        assisting you and your loved ones in living a more minimalist
+        lifestyle. <br />
+      </p>
+    </section>
+    <section class="rightSec"></section>
+
+    <!-- STORIES SECTION -->
+
+    <section class="section-stories">
+      <div class="bg-video">
+        <video class="bg-video__content" autoplay muted loop>
+          <source src="/img/happy_couple.mp4" type="video/mp4" />
+          Your browser is not supported!
+        </video>
+      </div>
+      <div class="u-center-text u-margin-bottom-big">
+        <h2 class="heading-secondary">
+          We make people genuinely happy
+        </h2>
+      </div>
+      <div class="row">
+        <div class="story">
+          <figure class="story__shape">
+            <img srcset="/img/happy1.jpeg" sizes="(max-width:56.25em) 28vw, (max-width:37.5em) 32vw, 18.75em"
+              alt="Happy Family" class="story__img" src="/img/happy1.jpeg" />
+            <figcaption class="story__caption">The Smiths</figcaption>
+          </figure>
+          <div class="story__text">
+            <h3 class="heading-tertiary u-margin-bottom-small">
+              I had the best week ever with my family
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Accusamus ex et inventore at earum quas asperiores. Lorem ipsum
+              dolor sit amet consectetur adipisicing elit. Accusamus ex et
+              inventore at earum quas asperiores
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="story">
+          <figure class="story__shape">
+            <img srcset="/img/hap2.jpg" sizes="(max-width:56.25em) 28vw, (max-width:37.5em) 32vw, 18.75em"
+              alt="Happy Family" class="story__img" src="/img/hap2.jpg" />
+            <figcaption class="story__caption">The Wilsons</figcaption>
+          </figure>
+          <div class="story__text">
+            <h3 class="heading-tertiary u-margin-bottom-small">
+              WOW! My life is completely different now
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit!
+              Accusamus ex et inventore at earum quas asperiores. Lorem ipsum
+              dolor sit amet consectetur adipisicing elit. Accusamus ex et
+              inventore at earum quas asperiores
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="u-center-text u-margin-top-huge">
+        <a href="#" class="btn btn-text">Read all stories &rarr;</a>
+      </div>
+    </section>
+
+    <!-- END OF STORIES SECTION -->
+
+    <div class="about-content">
+      <h2>Our goals for your home</h2>
+      <ul class="about-list">
+        <li class="text-primary">
+          Register the amount and type of items you have
+        </li>
+        <li class="text-primary">
+          Help you reach your downsizing and decluttering goals
+        </li>
+        <li class="text-primary">
+          Enable family and caregivers to better embrace a minimialist
+          lifestyle for themselves and their aging relative
+        </li>
+        <li class="text-primary">
+          Set manageable goals for removal of hoarded or undesired objects
+          while respecting the wishes of our client
+        </li>
+      </ul>
+    </div>
+  </main>
+
+  <%- include('./includes/footer.ejs') %>
+  <%- include('./includes/end.ejs') %>

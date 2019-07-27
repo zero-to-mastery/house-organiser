@@ -1,0 +1,196 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.introText {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.introText2 {
+	margin: auto;
+	display: flex;
+	justify-content: center;
+}
+
+.introText .introTextSize {
+	font-size: 2.5rem;
+}
+
+@media only screen and (max-width: 305px) {
+	.introText .introTextSize {
+		font-size: 1rem;
+		color: black;
+	}
+}
+
+.custHero {
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/karolina-szczur-504611-unsplash-min.jpg);
+	background-size: cover;
+	background-position: center;
+	margin: 0;
+	width: 100vw;
+	height: 800px;
+	max-width: 100%;
+}
+
+.hero-text {
+	margin-top: 50px;
+	margin-left: 1.8em;
+}
+
+.leftSecText {
+	color: white;
+	width: 50%;
+	margin: auto;
+	padding-top: 180px;
+}
+
+.hero-text h2 {
+	color: #ffffff;
+	text-align: left;
+	font-size: 200%;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+
+
+.btn {
+	display: inline-block;
+	margin: 10px 10px 10px 0;
+	padding: 10px 30px;
+	border: 2px solid #9b59b6;
+	border-radius: 30px;
+	text-decoration: none;
+	transition: color 0.2s, background-color 0.2s, border 0.2s;
+}
+
+.btn:hover {
+	background-color: #6c3981;
+	border: 2px solid #6c3981;
+	color: #ffffff;
+}
+
+.btn-sign {
+	background-color: #9b59b6;
+	color: #ffffff;
+}
+
+.btn-learn {
+	color: #9b59b6
+}
+
+.center {
+	border: 2px solid black;
+	padding: 25px;
+	text-align: center;
+}
+
+.img1 {
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url(/img/apartment.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	margin: 0;
+	width: 100%;
+	height: 100vh;
+	color: #ffffff;
+	align-items: center;
+	align-content: center;
+}
+
+
+.img1 h2 {
+	text-align: center;
+	width: 100%;
+}
+
+.img1 p {
+	text-align: center;
+	width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+	.img1 p {
+		display: none;
+	}
+
+	#c {
+		display: none;
+	}
+}
+
+#c {
+	color: #ffffff;
+	margin: auto;
+	border: 2px solid #ffffff;
+}
+
+.data {
+	padding: 20px;
+	text-align: center;
+}
+
+.about-content h2 {
+	width: 100%;
+	height: 150px;
+	background-color: #9b59b6;
+	color: #ffffff;
+	text-align: center;
+	padding: 5%;
+	text-transform: uppercase;
+}
+.about-content {
+	text-align:center;
+}
+.about-list {
+	min-height: 300px;
+	padding: 3%;
+	list-style-position:inside;
+}
+
+.about-list li {
+	padding: 1% 0%;
+}
+
+footer {
+	text-align: center;
+	width: 100%;
+	line-height: 80px;
+	color: #ffffff;
+	background-image: linear-gradient(to right, #9b59b6, #8c61c5, #7769d3, #5772e0, #127aeb);
+}
+
+.headerHouseOrg h1 span {
+	color: black;
+}
+
+.ownLessBack {
+	background-image: linear-gradient(to right, #9b59b6, #8c61c5, #7769d3, #5772e0, #127aeb);
+	color: white;
+	text-align: center;
+	padding: 80px;
+}
+
+.ownLessBack h1 {
+	text-shadow: 0px 0px 20px rgba(0, 0, 0, .2);
+}
+
+#questionnaire {
+	background: white;
+	width: 25%;
+	margin: auto;
+	padding: 3rem;
+}
+
+#reclaim {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
